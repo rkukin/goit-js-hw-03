@@ -1,12 +1,8 @@
 "use strict";
 
 const countProps = object => {
-  let counter = 0;
-  for (const prop in object) {
-    counter++;
-  }
-  return counter;
-};
+  return Object.keys(object).length;
+}
 
 console.log(countProps({})); // 0
 
